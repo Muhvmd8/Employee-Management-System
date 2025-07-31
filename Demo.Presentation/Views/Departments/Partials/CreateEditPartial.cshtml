@@ -1,0 +1,24 @@
+﻿@model DepartmentRequest
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="form-group mb-3">
+    @* <label class="form-label" for="Code"></label> *@
+    @* <input id="Code" name="Code" type="text" /> *@
+    <label class="form-label" asp-for="Code"></label>
+    <input asp-for="Code" class="form-control" />
+    <span asp-validation-for="Code" class="text-danger"></span>
+</div>
+<div class="form-group mb-3">
+    <label class="form-label" asp-for="Name"></label>
+    <input asp-for="Name" class="form-control" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+</div>
+<div class="form-group mb-3">
+    <label class="form-label" asp-for="Description"></label>
+    <textarea class="form-control" asp-for="Description"></textarea>
+    <span asp-validation-for="Description" class="text-danger"></span>
+</div>
+<div class="form-group mb-3">
+    <label class="form-label" asp-for="CreatedOn"></label>
+    <input type="date" asp-for="CreatedOn" class="form-control" />
+</div>

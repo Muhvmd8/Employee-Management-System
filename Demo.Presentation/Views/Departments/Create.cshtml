@@ -1,0 +1,23 @@
+﻿
+
+@model DepartmentRequest
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="row justify-content-center align-content-center mt-3">
+    <h1 class="col-8 my-4">Create Department</h1>
+
+    <form method="post" asp-controller="Departments" asp-action="Create" class="col-8">
+        @* /Views/Departments/Partials/CreateEditPartial.cshtml *@
+        <partial name="Partials/CreateEditPartial" /> @*model => DepartmentRequest*@
+        <div class="mt-4 m-auto">
+            <input class="btn btn-primary" type="submit" value="Create" />
+            <a asp-controller="Department" asp-action="Index" class="btn btn-outline-dark">Back to list</a>
+        </div>
+
+    </form>
+</div>
+
+@section validation {
+    <partial name="_validationscriptspartial">
+}
