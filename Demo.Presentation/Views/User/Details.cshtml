@@ -1,0 +1,33 @@
+﻿@model UserDto
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 class="my-5 w-75">User Details</h1>
+<br />
+<br />
+
+
+<div class="tab-content" id="myTabContent">
+    <!-- General Tab Content -->
+    <div class="tab-pane fade show active p-4 border" id="general" role="tabpanel" aria-labelledby="general-tab">
+
+        <div class="row">
+            <div class="form-group mb-3">
+                <label class="form-label" asp-for="Id"></label>
+                <input asp-for="Id" class="form-control" readonly />
+            </div>
+            <div class="form-group mb-3">
+                <label class="form-label" asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" readonly />
+            </div>
+            <div class="form-group mb-3">
+                <label class="form-label" asp-for="UserName"></label>
+                <input asp-for="UserName" class="form-control" readonly />
+            </div>
+            <div class="form-group mb-3">
+                <label class="form-label" asp-for="FullName"></label>
+                <input asp-for="FullName" class="form-control" readonly />
+            </div>
+        </div>
+    </div>
