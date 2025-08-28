@@ -1,0 +1,24 @@
+﻿
+@model RoleDto
+
+@{
+    ViewData["Title"] = "Add New Role";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Add New Course</h2>
+
+    <form asp-controller="Role" asp-action="Create" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-success">Add Course</button>
+    </form>
+</div>
+
+@section validation {
+    <partial name="_ValidationScriptsPartial">
+}
+

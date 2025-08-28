@@ -1,4 +1,6 @@
-﻿namespace CMS.PL.Controllers;
+﻿using Demo.Presentation.Models.Roles;
+
+namespace CMS.PL.Controllers;
 [Authorize(Roles = "Admin")]
 public class RoleController(RoleManager<IdentityRole> roleManager,
     IWebHostEnvironment environment,

@@ -1,0 +1,20 @@
+﻿@model RoleDto
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="row justify-content-center align-content-center mt-3">
+    <h1 class="col-8 my-4">Delete User</h1>
+    <form method="post" asp-controller="Role" asp-action="Delete" class="col-8">
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="form-group mb-3">
+            <label class="form-label" asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="mt-4 m-auto">
+            <input class="btn btn-success" type="submit" value="Delete" />
+            <a asp-controller="User" asp-action="Index" class="btn btn-outline-dark">Back to list</a>
+        </div>
+    </form>
+</div>

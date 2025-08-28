@@ -1,4 +1,4 @@
-﻿namespace CMS.PL.Models.Users;
+﻿namespace Demo.Presentation.Models.Roles;
 public class UserInRoleViewModel
 {
     public string Id { get; set; }
