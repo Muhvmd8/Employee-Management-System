@@ -59,4 +59,4 @@ The system allows seamless management of **Employees** and **Departments**, prov
   - `DepartmentUpdateRequest`
   
 - **Authentication**
-  - `AccountController` handles login, logout, and registration
+  - `AccountController` handles login, logout, reset password, and registration
