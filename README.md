@@ -37,9 +37,10 @@ The system allows seamless management of **Employees** and **Departments**, prov
 
 ## 🛠️ Technical Implementation
 - **Controllers**
-  - `DepartmentController`
-  - `EmployeeController`
-  - `AccountController` (Authentication & Authorization)
+  - `DepartmentsController`
+  - `EmployeesController`
+  - `AccountController` (Authentication)  
+  - `RolesController` (Authorization)
 
 - **Views**
   - Strongly-typed Razor Views
@@ -47,8 +48,15 @@ The system allows seamless management of **Employees** and **Departments**, prov
   - **ViewData**, **ViewBag**, and **TempData** for passing data between controllers and views
 
 - **DTOs**
-  - `EmployeeDto`
-  - `DepartmentDto`
+  - `EmployeeCreateRequest`
+  - `EmployeeResponse`
+  - `EmployeeUpdateRequest`
+  - `EmployeeDetailsResponse`
 
+  - `DepartmentResponse`
+  - `DepartmentDetailsResponse`
+  - `DepartmentCreateRequest`
+  - `DepartmentUpdateRequest`
+  
 - **Authentication**
   - `AccountController` handles login, logout, and registration
